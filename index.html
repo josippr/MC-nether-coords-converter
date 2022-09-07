@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coords converter</title>
+    <link rel="stylesheet" href="CSS/global.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <script defer type="text/javascript" src="JS/converter.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="header-wrapper">
+            <div class="logo">
+                Nether coords converter
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <div class="converter-wrapper">
+            <h1 style="color: #00FF00;">Overworld to nether converter</h1>
+            <hr class="line">
+            <h2>Enter Overworld coords:</h2><br>
+            <input id="overworld-x" class="input-field" type="text">
+            <input id="overworld-z" class="input-field" type="text">
+            <input id="overworld-y" class="input-field" type="text">
+            <button onclick="getNetherCoords()" id="btn">Find!</button><br><br>
+            <h2 id="eq">Equivalent Nether coords:</h2><br>
+            <div id="nether-x" class="nether-result" style="float: left; padding-left: 10px;"></div>
+            <div id="nether-z" class="nether-result" style="float: left; padding-left: 2px; width: 200px;"> </div>
+            <div id="nether-y" class="nether-result" style="float: left; padding-left: 5px; width: 200px;"></div><br><br>
+            <!-- nether converter -->
+            <h1 id="nto">Nether to Overworld converter</h1>
+            <hr class="line">
+            <h2>Enter Nether coords:</h2><br>
+            <input id="nether-x-x" class="input-field" type="text">
+            <input id="nether-z-z" class="input-field" type="text">
+            <input id="nether-y-y" class="input-field" type="text">
+            <button onclick="getOverworldCoords()" id="btn" style="background-color: darkred;">Find!</button><br><br>
+            <h2>Equivalent Overworld coords:</h2><br>
+            <div id="overworld-x-div" class="nether-result" style="float: left; padding-left: 10px;"></div>
+            <div id="overworld-z-div" class="nether-result" style="float: left; padding-left: 2px; width: 200px;"> </div>
+            <div id="overworld-y-div" class="nether-result" style="float: left; padding-left: 5px; width: 200px;"></div>
+        </div>
+
+    </main>
+    <footer>
+        <h4>Copyright &copy;Josip Prpić 2022.<br>All rights reserved.</h4>
+
+    </footer>
+
+    <script type="text/javascript" src="JS/converter.js"></script>
+</body>
+
+</html>

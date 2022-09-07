@@ -1,4 +1,11 @@
-# MC-Javascript-nether-coords-converter
-basic (meme really) JS app with terrible design and even worse code clarity, used by random dudes who play Minecraft
+# minecraft-coords-converter
+Simple web app for calculating overworld and nether cooridinates in Minecraft
+--------------------
+**Version 1.0**
 
-this is kind of meme app built in 20 mins on the toilet while AFK-ing in Enderman xp farm
+release date: August 28, 2022
+notes: initial release, several bugs to be fixed.
+
+Screenshot:
+
+![alt text](https://josip-prpic.from.hr/coordsconverter/IMG/img-version-1-0.png)
